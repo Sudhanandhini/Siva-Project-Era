@@ -10,19 +10,19 @@ export default function PlanEventSection() {
   return (
     <Box
       sx={{
-        display: "flex",
-        alignItems: "flex-end", // rose image aligned down
-        justifyContent: "space-between",
+       
         backgroundColor: "#111", // dark background
         color: "white",
         px: { xs: 3, md: 10 , lg: 23},
         pb: { xs: 6, md: 6 ,lg:6},
         pt: {xs:4, md:4, lg:4},
-        flexWrap: "wrap", // responsive
-        position: "relative",
+       
       }}
     >
-      
+      <Box sx={{maxWidth:'1200px',  display: "flex",
+        alignItems: "flex-end", // rose image aligned down
+        justifyContent: "space-between",margin:'0 auto',  flexWrap: "wrap", // responsive
+        position: "relative", }}>
       {/* Left Content */}
       <Box sx={{ flex: 1, minWidth: "300px", maxWidth: "600px" }}>
         <Typography variant="body2" sx={{ mb: 1 }}>
@@ -41,7 +41,7 @@ export default function PlanEventSection() {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ mb: 3, fontWeight: 300, color: "rgba(255,255,255,0.85)" , fontSize:{xs:'12px'}}}
+          sx={{ mb: 3, fontWeight: 300, color: "rgba(255,255,255,0.85)" , fontSize:{xs:'12px' ,sm: "14px", md:'16px',lg:'17px'}}}
         >
           We understand that every detail is important, and we are here to ensure
           that your event is a success from start to finish.
@@ -60,7 +60,7 @@ export default function PlanEventSection() {
               component="li"
               key={i}
               variant="body2"
-              sx={{ mb: 1.2, color: "rgba(255,255,255,0.75)", fontSize: { xs: "12px", sm: "14px" } }}
+              sx={{ mb: 1.2, color: "rgba(255,255,255,0.75)", fontSize: { xs: "12px", sm: "14px", md:'16px',lg:'17px' } }}
             >
               {item}
             </Typography>
@@ -119,6 +119,9 @@ export default function PlanEventSection() {
       }}
     />
   </Box>
+
+</Box>
+
 
 </Box>
 
