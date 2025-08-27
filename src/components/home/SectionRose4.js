@@ -41,7 +41,7 @@ export default function PlanEventSection() {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ mb: 3, fontWeight: 300, color: "rgba(255,255,255,0.85)" }}
+          sx={{ mb: 3, fontWeight: 300, color: "rgba(255,255,255,0.85)" , fontSize:{xs:'14px'}}}
         >
           We understand that every detail is important, and we are here to ensure
           that your event is a success from start to finish.

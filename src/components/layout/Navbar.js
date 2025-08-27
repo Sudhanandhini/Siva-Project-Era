@@ -90,12 +90,16 @@ const Navbar = () => {
               px: 2,
               borderBottom: '1px solid',
               borderColor: 'divider',
-              '&:hover': {
-                bgcolor: 'primary.light',
-                '& .MuiTypography-root': {
-                  color: 'primary.main'
-                }
-              }
+              // '&:hover': {
+              //   bgcolor: 'primary.light',
+              //   '& .MuiTypography-root': {
+              //     color: 'primary.main'
+              //   }
+              // }
+               color: '#000',
+        '&:hover': {
+          bgcolor: 'transparent', // ✅ Remove red hover background
+        }
             }}
           >
             <Box sx={{ 
