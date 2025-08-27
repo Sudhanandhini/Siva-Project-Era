@@ -41,14 +41,14 @@ export default function PlanEventSection() {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ mb: 3, fontWeight: 300, color: "rgba(255,255,255,0.85)" , fontSize:{xs:'14px'}}}
+          sx={{ mb: 3, fontWeight: 300, color: "rgba(255,255,255,0.85)" , fontSize:{xs:'12px'}}}
         >
           We understand that every detail is important, and we are here to ensure
           that your event is a success from start to finish.
         </Typography>
 
         {/* Bullet points */}
-        <Box component="ul" sx={{ pl: 2, mb: 4 }}>
+        <Box component="ul" sx={{ pl: 2, mb: 4 ,}} >
           {[
             "Planning and goal setting for the event.",
             "Project management and coordination with external suppliers.",
@@ -60,7 +60,7 @@ export default function PlanEventSection() {
               component="li"
               key={i}
               variant="body2"
-              sx={{ mb: 1.2, color: "rgba(255,255,255,0.75)", fontSize:'14px' }}
+              sx={{ mb: 1.2, color: "rgba(255,255,255,0.75)", fontSize: { xs: "12px", sm: "14px" } }}
             >
               {item}
             </Typography>
